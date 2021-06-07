@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --Vcolor :rgb(33, 127, 214);
+            --Bcolor : green;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color:var(--Bcolor);
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            /* display: grid;
+            place-items: center; */
+            position: relative;
+            
+           
+
+        }
+        ::selection{
+            background-color: white;
+            color: rgb(206, 29, 29);
+        }
+        .main-container{
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            width: 60%;
+            height: 60%;
+            border: 2px solid black;
+            background: linear-gradient(  270deg,rgba(0,0,0,1) 50%,rgba(255,255,255,1) 50%),url(mountain.jpg);
+            /* background-color: var(--Vcolor); */
+            transform: translate(-50%,-50%);
+            /* background-image: url(/mountain.jpg); */
+            background-size:cover;
+        
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-container"></div>
+    </div>
+</body>
+</html>
